@@ -1,6 +1,6 @@
 package ExercicioFuncionario.application;
 
-import ExercicioFuncionario.entities.Funcionario;
+import ExercicioFuncionario.entities.Employee;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -9,21 +9,21 @@ public class Program {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        Funcionario funcionario = new Funcionario();
+        Employee employee = new Employee();
 
         System.out.println("Nome: ");
-        funcionario.name = sc.nextLine();
+        employee.name = sc.nextLine();
         System.out.println("Gross Salary: ");
-        funcionario.grossSalary = sc.nextDouble();
+        employee.grossSalary = sc.nextDouble();
         System.out.println("Tax: ");
-        funcionario.tax = sc.nextDouble();
+        employee.tax = sc.nextDouble();
 
-        System.out.println("Employee: "+ funcionario.name +", $ " + funcionario.netSalary());
+        System.out.println("Employee: "+ employee.name +", $ " + employee.netSalary());
 
         System.out.println("Wich percentage to increase salary? ");
-        funcionario.increaseSalary(sc.nextDouble());
+        employee.increaseSalary(sc.nextDouble());
 
-        System.out.println("Updated data: " + funcionario.name + ", $ " + funcionario.grossSalary);
+        System.out.println("Updated data: " + employee.name + ", $ " + employee.grossSalary);
 
         sc.close();
     }
