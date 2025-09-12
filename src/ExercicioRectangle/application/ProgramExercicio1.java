@@ -1,6 +1,6 @@
-package application;
+package ExercicioRectangle.application;
 
-import entities.Rectangle;
+import ExercicioRectangle.entities.Rectangle;
 
 import java.util.Locale;
 import java.util.Scanner;

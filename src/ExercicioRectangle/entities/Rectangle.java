@@ -1,4 +1,4 @@
-package entities;
+package ExercicioRectangle.entities;
 
 public class Rectangle {
     public double width;

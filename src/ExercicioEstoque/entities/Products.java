@@ -1,4 +1,4 @@
-package entities;
+package ExercicioEstoque.entities;
 
 public class Products {
     public String name;

@@ -1,6 +1,6 @@
-package application;
+package ExercicioEstoque.application;
 
-import entities.Products;
+import ExercicioEstoque.entities.Products;
 
 import java.util.Locale;
 import java.util.Scanner;
