@@ -5,7 +5,7 @@ import entities.Products;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ProductsProgram {
+public class Program {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
