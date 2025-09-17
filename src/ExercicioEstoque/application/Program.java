@@ -9,17 +9,19 @@ public class Program {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        Products products = new Products();
 
         int quantity = 0;
 
         System.out.println("Enter product data: ");
         System.out.println("Name: ");
-        products.name = sc.nextLine();
+        String name = sc.nextLine();
         System.out.println("Price: ");
-        products.price = sc.nextDouble();
+        double price = sc.nextDouble();
         System.out.println("Quantity int stock: ");
-        products.quantity = sc.nextInt();
+        quantity = sc.nextInt();
+
+        Products products = new Products(name, price, quantity);
+
 
         System.out.println();
         System.out.println("Product data: " + products);
