@@ -17,11 +17,15 @@ public class Program {
         String name = sc.nextLine();
         System.out.println("Price: ");
         double price = sc.nextDouble();
-        System.out.println("Quantity int stock: ");
-        quantity = sc.nextInt();
+//        System.out.println("Quantity int stock: ");
+//        quantity = sc.nextInt();
 
         Products products = new Products(name, price, quantity);
 
+        products.setName("computer");
+        System.out.println(products.getName());
+        products.setPrice(1200);
+        System.out.println(products.getPrice());
 
         System.out.println();
         System.out.println("Product data: " + products);
