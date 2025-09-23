@@ -10,33 +10,36 @@ public class Program {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        Account account = new Account();
+        Account account;
 
         System.out.println("Enter account number: ");
-        account.setNumber(sc.nextInt());
-        sc.nextLine();
+        int number = sc.nextInt();
 
         System.out.println("Enter account holder: ");
-        account.setHolder(sc.nextLine());
+        sc.nextLine();
+        String holder = sc.nextLine();
 
         System.out.println("Is there na initial deposit (y/n)? ");
-        String initialDeposit = sc.next();
+        char response = sc.next().charAt(0);
 
-        if (initialDeposit.equalsIgnoreCase("y")) {
+        if (response == 'y') {
             System.out.println("Enter initial deposit value: ");
-            account.setBalance(sc.nextDouble());
+            double initialDeposit = sc.nextDouble();
+            System.out.println();
+            account = new Account(holder, number, initialDeposit);
         } else {
-            System.out.println(account);
+            account = new Account(holder, number);
         }
+
+        System.out.println(account);
 
         System.out.println("Enter a deposit value: ");
         account.deposit(sc.nextDouble());
 
-
+        System.out.println();
         System.out.println(account);
-        System.out.println(" ");
 
-
+        System.out.println();
         System.out.println("Enter a withdraw value: ");
         account.withdraw(sc.nextDouble());
 
