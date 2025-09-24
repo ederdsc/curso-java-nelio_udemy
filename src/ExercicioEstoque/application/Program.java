@@ -28,7 +28,7 @@ public class Program {
         System.out.println(products.getPrice());
 
         System.out.println();
-        System.out.println("Product data: " + products);
+        System.out.println("ExercicioVetor.entities.Product data: " + products);
 
         System.out.println("Deseja adicionar mais produtos? Digite 1 para sim ou 2 para não");
         int option = sc.nextInt();
